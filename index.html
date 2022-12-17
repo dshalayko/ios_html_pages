@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css/newfull.css">
+    <script src="/src/js/full.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+</head>
+<body class="p-layout">
+
+<div class="p-modal-background">
+    <div class="p-modal" id="two-button-modal" data-p-close-on-outside="true">
+        <h3>Attention</h3>
+        <p>VPN App Is recommended to continue watching in safe mode</p>
+        <div class="p-modal-button-container">
+            <a href="#" data-p-cancel>Install</a>
+            <a href="#" data-p-cancel>Details</a>
+        </div>
+    </div>
+
+    <div class="p-modal" id="one-button-modal">
+        <h3>VPN highly suggested for this site</h3>
+        <p>
+            Your browsing, streaming and download activity may be not private and may be unsecured.
+        </p>
+        <div class="p-modal-button-container">
+            <a href="#" data-p-cancel>INSTALL</a>
+        </div>
+    </div>
+
+    <div class="p-modal" id="one-button-modal-appstore">
+        <p><b>Continue to AppStore</b></p>
+
+        <div class="p-modal-button-container">
+            <a href="#" data-p-cancel>OK</a>
+        </div>
+    </div>
+
+    <div class="p-modal" id="modal-danger">
+        <p style="color:red"><b>Video may be not available in your county</b></p>
+        <img src="/src/images/danger_logo.png" alt=""  width="100" >
+        <p>
+
+            Please install the VPN app (Free Trial) to access blocked sites and view videos anonymously.
+        </p>
+        <div class="p-modal-button-container">
+            <a href="#" data-p-cancel>INSTALL</a>
+        </div>
+    </div>
+
+</div>
+
+
+<a href="#" class="p-btn" data-p-open-modal="#two-button-modal">Attention </a>
+<a href="#" class="p-btn" data-p-open-modal="#one-button-modal">VPN highly suggested for this site </a>
+<a href="#" class="p-btn" data-p-open-modal="#one-button-modal-appstore">Continue to AppStore </a>
+<a href="#" class="p-btn" data-p-open-modal="#modal-danger">Danger</a>
+
+
+</body>
+</html>
