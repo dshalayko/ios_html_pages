@@ -1,2 +1,1 @@
-
-import('../js/modals.js')
+import('js/modals.js')
