@@ -4,60 +4,66 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="src/css/newfull.css">
-   
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 </head>
-<body class="p-layout">
+<body>
+<div class="p-layout wrapper">
+    <div class="p-modal-background nowactive">
 
-<div class="p-modal-background">
-    <div class="p-modal" id="two-button-modal" data-p-close-on-outside="true">
-        <h3>Attention</h3>
-        <p>VPN App Is recommended to continue watching in safe mode</p>
-        <div class="p-modal-button-container">
-            <a href="#" data-p-cancel>Install</a>
-            <a href="#" data-p-cancel>Details</a>
+        <div class="p-modal active" id="modal-danger">
+            <p style="color:red"><b>Video may be not available in your county</b></p>
+            <img src="src/images/danger_logo.png" alt="" width="100">
+            <p>
+
+                Please install the VPN app (Free Trial) to access blocked sites and view videos anonymously.
+            </p>
+            <div class="p-modal-button-container">
+                <a href="#" onClick="goTo()" data-p-cancel>INSTALL</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+    </div>
+    <div class="youtube-block ">
+        <div class="w3-light-grey">
+            <div class="w3-red" style="height:7px;width:30%"></div>
+        </div>
+        <br>
+        <div class="controls">
+            <div class="block1">
+                <div class="play">
+                    <img src="src/images/play.png" alt="" width="100%">
+                </div>
+                <div class="next">
+                    <img src="src/images/next.png" alt="" width="100%">
+                </div>
+                <div class="volume">
+                    <img src="src/images/volume.png" alt="" width="100%">
+                </div>
+                <div class="time">
+                    <img src="src/images/time.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="block2">
+                <div class="setting">
+                    <img src="src/images/setting.png" alt="" width="100%">
+                </div>
+                <div class="mode1">
+                    <img src="src/images/mode1.png" alt="" width="100%">
+                </div>
+                <div class="mode2">
+                    <img src="src/images/mode2.png" alt="" width="100%">
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="p-modal" id="one-button-modal">
-        <h3>VPN highly suggested for this site</h3>
-        <p>
-            Your browsing, streaming and download activity may be not private and may be unsecured.
-        </p>
-        <div class="p-modal-button-container">
-            <a href="#" data-p-cancel>INSTALL</a>
-        </div>
-    </div>
-
-    <div class="p-modal" id="one-button-modal-appstore">
-        <p><b>Continue to AppStore</b></p>
-
-        <div class="p-modal-button-container">
-            <a href="#" data-p-cancel>OK</a>
-        </div>
-    </div>
-
-    <div class="p-modal" id="modal-danger">
-        <p style="color:red"><b>Video may be not available in your county</b></p>
-        <img src="src/images/danger_logo.png" alt=""  width="100" >
-        <p>
-
-            Please install the VPN app (Free Trial) to access blocked sites and view videos anonymously.
-        </p>
-        <div class="p-modal-button-container">
-            <a href="#" data-p-cancel>INSTALL</a>
-        </div>
-    </div>
-
 </div>
+<script src="src/js/modals.js"></script>
+<script src="src/js/links.js"></script>
 
-
-<a href="#" class="p-btn" data-p-open-modal="#two-button-modal">Attention </a>
-<a href="#" class="p-btn" data-p-open-modal="#one-button-modal">VPN highly suggested for this site </a>
-<a href="#" class="p-btn" data-p-open-modal="#one-button-modal-appstore">Continue to AppStore </a>
-<a href="#" class="p-btn" data-p-open-modal="#modal-danger">Danger</a>
-
- <script src="src/js/modals.js"></script>
 </body>
 </html>
